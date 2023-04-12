@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulário</h1>
-    <label for="name">Nome: </label><br>
-    <input id="name" type="text" name="name"><br>
-    <label for="email">Email: </label><br>
-    <input id="email" type="email" name="name"><br>
-    <button onclick="sendData()">Cadastrar</button>
-    <h2>Tabela</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Entrada</th>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Id do banco de dados</th>
-                <th colspan="2"></th>
-            </tr>
-        </thead>
-        <tbody id="tbody">
-            
-        </tbody>
-    </table>
+    <div class="formulario">
+        <div class="cadastro">
+            <h1 class="tituloformulario">Formulário</h1><br>
+            <label for="name"><h4 class="nome">Nome:</h4> </label>
+            <input id="name" type="text" name="name"><br>
+            <label for="email"><h4 class="email">Email:</h4> </label>
+            <input id="email" type="email" name="name"><br><br>
+            <button class="cadastrarbotao" onclick="sendData()"><h4 class="botaocadastro">Cadastrar</h4></button>
+        </div>
+    </div>
+    <div class="tabela">
+        <h2 class="titulotabela">Tabela</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Entrada</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Id do banco de dados</th>
+                    <th colspan="2"></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+    
     <script src="./scripts/post.js"></script>
     <script src="./scripts/get.js"></script>
 </body>
